@@ -21,11 +21,11 @@ import java.io.IOException;
 public class ContactServiceTests {
 
     private static final Contact IVAN = new Contact(
-            1L, "Ivan", "Ivanov", "iivanov@gmail.com", "1234567"
+            1L, "Ivan", "Ivanov", "1234567", "iivanov@gmail.com"
     );
 
     private static final Contact MARIA = new Contact(
-            2L, "Maria", "Ivanova", "mivanova@gmail.com", "7654321"
+            2L, "Maria", "Ivanova", "7654321", "mivanova@gmail.com"
     );
 
     private final ContactService contactService;

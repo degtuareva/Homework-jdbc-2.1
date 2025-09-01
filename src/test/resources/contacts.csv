@@ -1,2 +1,3 @@
-Ivan,Ivanov,iivanov@gmail.com,1234567
-Maria,Ivanova,mivanova@gmail.com,7654321
+name,surname,phone_number,email
+Ivan,Ivanov,1234567,iivanov@gmail.com
+Maria,Ivanova,7654321,mivanova@gmail.com

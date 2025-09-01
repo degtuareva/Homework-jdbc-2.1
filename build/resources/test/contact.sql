@@ -7,3 +7,4 @@ CREATE TABLE CONTACT (
      EMAIL varchar (255),
      PHONE_NUMBER varchar (255)
 );
+CREATE UNIQUE INDEX IF NOT EXISTS unique_email_idx ON contact(email);

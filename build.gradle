@@ -6,7 +6,12 @@ plugins {
 
 group = 'product.star'
 version = '1.0-SNAPSHOT'
-sourceCompatibility = '17'
+
+// Задаём java совместимость через блок java
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
 
 repositories {
     mavenCentral()

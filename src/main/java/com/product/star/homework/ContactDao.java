@@ -30,7 +30,9 @@ public class ContactDao {
     }
 
     public void saveAll(Collection<Contact> contacts) {
-        var sql = "INSERT INTO contact (name, surname, phone_number, email) VALUES (:name, :surname, :phone, :email)";
+        var sql = "INSERT INTO contact (name, surname, phone_number, email) VALUES (:name, :surname, :phone, :email) " +
+                "ON CONFLICT (email) DO UPDATE SET " +
+                "name = EXCLUDED.name, surname = EXCLUDED.surname, phone_number = EXCLUDED.phone_number";
         var batchValues = contacts.stream()
                 .map(contact -> new MapSqlParameterSource()
                         .addValue("name", contact.getName())
